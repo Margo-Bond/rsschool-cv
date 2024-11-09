@@ -1,5 +1,7 @@
 # Margarita Bondarenko
 
+![My Photo](foto.jpg)
+
 ## Contact Info
 - **Phone:** + 381 629 381 469
 - **Telegram:** [@margo_frontdev](https://t.me/margo_frontender)  
