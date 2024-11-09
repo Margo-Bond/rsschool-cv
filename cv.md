@@ -42,7 +42,7 @@ const ProfessionCardMobi: React.FC<ProfessionCardMobiProps> = ({ image, professi
         <div
             ref={cardRef}
             className="flex w-[320px] flex-col rounded-[38px] bg-cover"
-            style={{ backgroundImage: `url(${image})` }}
+            style="background-image: url('path/to/image.jpg');"
         >
             <div>{profession}</div>
             <div>{price} BYN/неделя</div>
