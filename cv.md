@@ -110,7 +110,7 @@ export default ProfessionCardMobi
   - **RSSchool, Frontent Course**: JavaScript, React, Git and Git Bash, HTML, CSS, SCSS
   - **SoftUni (Serbia), JavaScript Course**: JavaScript
   - **IT Girls School, Frontend development**: JavaScript, React, TypeScript, NextJS, Git and Git Bash, HTML, CSS, SCSS
-- **Frontend Development Courses**
+- **Backend Development Courses**
   - **Saint Petersburg Polytechnic University,  Introduction to Python**
 
 - **PhD in Biology (2018)**  
