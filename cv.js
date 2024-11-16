@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         english: 'Level: B1 (Intermediate)'
     };
 
-    document.getElementById('name').textContent = result = cvData.name;
+    document.getElementById('name').textContent = cvData.name;
 
     const contactList = document.getElementById('contact-list');
     cvData.contactInfo.forEach(info => {
@@ -85,10 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsList.append(li);
     });
 
-    const experienceList = document.getElementById(experience-list);
+    const experienceList = document.getElementById('experience-list');
     cvData.experience.forEach(exp => {
         const article = document.createElement('article');
-        article.innerHTML = '<h3>${exp.company}</h3><p><strong>Role:</strong> ${exp.role}</p>';
+        article.innerHTML = `<h3>${exp.project}</h3><p><strong>Role:</strong> ${exp.role}</p>`;
+        if (exp.link) {
+            article.innerHTML += `<p><a href="${exp.link}" target="_blank">Project Link</a></p>`;
+        }
         const ul = document.createElement('ul');
         exp.details.forEach(detail => {
             const li = document.createElement('li');
@@ -100,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const educationList = document.getElementById('education-list');
-    resumeData.education.forEach(edu => {
+    cvData.education.forEach(edu => {
         const li = document.createElement('li');
         li.textContent = edu;
         educationList.appendChild(li);
