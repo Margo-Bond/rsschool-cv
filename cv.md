@@ -4,7 +4,7 @@
 
 ## Contact Info
 - **Phone:** + 381 629 381 469
-- **Telegram:** [@margo_frontdev](https://t.me/margo_frontender)  
+- **Telegram:** [@margo_frontender](https://t.me/margo_frontender)  
 - **Email:** ritabond1991@gmail.com  
 - **GitHub:** [Margo-Bond](https://github.com/Margo-Bond)  
 - **Location:** Belgrade, Serbia
