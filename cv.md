@@ -4,7 +4,7 @@
 
 ## Contact Info
 - **Phone:** + 381 629 381 469
-- **Telegram:** [@margo_frontdev](https://t.me/margo_frontender)  
+- **Telegram:** [@margo_frontender](https://t.me/margo_frontender)  
 - **Email:** ritabond1991@gmail.com  
 - **GitHub:** [Margo-Bond](https://github.com/Margo-Bond)  
 - **Location:** Belgrade, Serbia
@@ -110,7 +110,7 @@ export default ProfessionCardMobi
   - **RSSchool, Frontent Course**: JavaScript, React, Git and Git Bash, HTML, CSS, SCSS
   - **SoftUni (Serbia), JavaScript Course**: JavaScript
   - **IT Girls School, Frontend development**: JavaScript, React, TypeScript, NextJS, Git and Git Bash, HTML, CSS, SCSS
-- **Frontend Development Courses**
+- **Backend Development Courses**
   - **Saint Petersburg Polytechnic University,  Introduction to Python**
 
 - **PhD in Biology (2018)**  
