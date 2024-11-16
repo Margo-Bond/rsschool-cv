@@ -1,1 +1,1 @@
-https://margo-bond.github.io/rsschool-cv
+https://margo-bond.github.io/rsschool-cv/
