@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
             {type: 'location', value: 'Belgrade, Serbia'}
         ],
         summary: 'I am a frontend developer focused on creating user-friendly and functional interfaces. Transitioning to IT allowed me to solve complex problems and create valuable products. I thrive in teamwork environments and continuously learn modern technologies. Passionate about developing my skills in JavaScript and React, I am eager to contribute to challenging projects and grow as a developer.',
-        skills: [
-            'HTML5', 'CSS3 (Flex, Grid, SCSS)', 'JavaScript (ES6+)', 'ReactJS', 'Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Git', 'GitHub', 'Vite', 'npm', 'Figma', 'Trello', 'Jira'
-        ],
+        skills: 
+            'HTML5, CSS3 (Flex, Grid, SCSS), JavaScript (ES6+), ReactJS, Next.js, TypeScript, Firebase, Tailwind CSS, Git, GitHub, Vite, npm, Figma, Trello, Jira',
         experience: [
             {
                 project: 'FunScrut',
@@ -65,13 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
         english: 'Level: B1 (Intermediate)'
     };
 
-    document.getElementById('name').textContent = cvData.name;
+    document.getElementById('title').textContent = cvData.name;
 
     const contactList = document.getElementById('contact-list');
     cvData.contactInfo.forEach(info => {
         const li = document.createElement('li');
         li.innerHTML = info.link
-        ? `<strong>${info.type}:</strong> <a href="${info.link}">${info.value}</a>`
+        ? `<strong>${info.type}:</strong> <a href="${info.link}" class="link">${info.value}</a>`
         : `<strong>${info.type}:</strong> ${info.value}`;
         contactList.append(li);
     });
@@ -79,18 +78,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('summary-text').textContent = cvData.summary;
 
     const skillsList = document.getElementById('skills-list');
-    cvData.skills.forEach(skill => {
-        const li = document.createElement('li');
-        li.textContent = skill;
-        skillsList.append(li);
-    });
+    skillsList.textContent = cvData.skills;
 
     const experienceList = document.getElementById('experience-list');
     cvData.experience.forEach(exp => {
         const article = document.createElement('article');
+        article.classList.add('experience-item');
         article.innerHTML = `<h3>${exp.project}</h3><p><strong>Role:</strong> ${exp.role}</p>`;
         if (exp.link) {
-            article.innerHTML += `<p><a href="${exp.link}" target="_blank">Project Link</a></p>`;
+            article.innerHTML += `<p><a href="${exp.link}" target="_blank" class="link">Project Link</a></p>`;
         }
         const ul = document.createElement('ul');
         exp.details.forEach(detail => {
@@ -109,5 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         educationList.appendChild(li);
     });
 
-    document.getElementById('english-level').textContent = resumeData.english;
+    document.getElementById('english-level').textContent = cvData.english;
+
+    
 })
